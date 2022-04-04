@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art</title>
+</head>
+<style>
+    body {
+        background-color: #b4f4f8;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 30px;
+        color: blueviolet;
+        padding: 15px;
+        border: 1px solid green;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        color: blueviolet;
+        padding: 50px 50px 10px 50px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(pink, white, blueviolet);
+    }
+    
+    li {
+        --display: block;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        text-align: justify;
+    }
+    
+    Button {
+        display: block;
+        margin: 15px auto;
+        color: white;
+        background: blueviolet;
+        font-size: 18px;
+        padding: 15px 30px;
+        border: 1px solid #885df1;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 50px;
+        transition: all 300ms ease-in-out;
+        margin-bottom: 20px;
+        margin-top: 80px;
+    }
+    
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    
+    ul {
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    
+    .cook {
+        display: block;
+        text-align: center;
+        margin: 50px;
+        font-size: 20px;
+        color: #885df1;
+        text-decoration: none;
+    }
+    
+    .cook:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 80px;
+        margin-top: 200px;
+        margin-bottom: 10px;
+    }
+    
+    .contents {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+    }
+</style>
+
+<body>
+    <div class="contents">
+
+        <h1>
+            <strong> My Art Gallery</strong>
+        </h1>
+
+        <h2>
+
+            <strong> DRAW > SKETCH > PAINT </strong>
+        </h2>
+        <ul>
+            <hr>
+            <li>
+
+                <img src="https://korbartwuhs.files.wordpress.com/2013/01/what_is_art.jpg"> </li>
+            <hr>
+            <p><strong>ART</strong> is the reflection of your soul, your feelings & thoughts which is a broadest sense, is a form of communication. Art is a diverse range of human activity, and resulting product, that involves creative or imaginative talent
+                expressive of technical proficiency, beauty, emotional power, or conceptual ideas. There is no generally agreed definition of what constitutes art, and its interpretation has varied greatly throughout history and across cultures.
+            </p>
+
+            <li>
+                <a href="https://youtu.be/d8gR9XLJAB0 " target="blank" class="readMore"> 
+                Read more on wikipedia
+            </a>
+            </li>
+
+
+
+            <br>
+            <li>
+                <strong>Art Materials Used</strong></li>
+            <hr>
+            <ul>
+                <li>Sketchbook</li>
+                <li>Canvas Sheets</li>
+                <li>Graphite Drawing Pencils</li>
+                <li>Cotton</li>
+                <li>Eraser and Kneaded Eraser</li>
+                <li>Art Pencil Sharpener</li>
+                <li>Ruler</li>
+                <li>Watercolor or Acrylic Paint Set</li>
+                <li>Paint Brushes</li>
+                <li>Plastic Paint Palette or Palette Paper Pad</li>
+                <li>Watercolor Paper Pad or Canvas Pad</li>
+                <li>Rangoli(coloured Sand)</li>
+            </ul>
+
+            <p> <strong>My Art Journey:</strong> My love for art started from my childhood during my school days. I used see figures in clouds and water marks on the floar (I still do). Gradually started just illistrating same figures or shapes on the paper.
+                Learned bit more on shading and nature drawring at school itself. All my art experiments are done out of my interest or hobby.I don't restrict myself to any particular art type as I enjoy all forms of them. I did not get chance to learn
+                from any professional Art Teacher. I explore the technigues online and try to apply them. Hope you love my experiments.<strong> My Love for ART is never ending.. </strong> </p>
+
+
+            <ol>
+                <a href="https://youtu.be/d8gR9XLJAB0" target="blank" class="cook">
+                    <strong> 👉Click here to view my Art Collections.👈</strong>
+                </a>
+            </ol>
+
+            <hr>
+
+            <button>Feedback Please!</button>
+
+            <p class="footer">
+
+                If you have passion for something, you will find a way for it - Rashmi Aribenchi
+
+            </p>
+    </div>
+
+    <script>
+        function MyArt() {
+
+            let name = prompt("What is your name?");
+            let email = prompt("What is your Email address?");
+            let Rate = prompt("Out of 10, what would you rate this blog?");
+
+            if (name.length > 0 && email.length > 0) {
+
+                alert("Hi " + name + "," + "I'm glad that you liked my art work. Thank you for your feedback!😃");
+
+
+            } else {
+                alert("Hi" + "," + "Thank you for checking 'My Art Gallery' page. 😊 ");
+
+            }
+
+        }
+
+        let tryButton = document.querySelector("button");
+
+        tryButton.addEventListener("click", MyArt)
+    </script>
+
+</body>
+
+</html>
